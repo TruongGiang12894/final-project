@@ -1,0 +1,30 @@
+.sidebar{
+    width: 15%;
+    height: 100vh;
+    background-color: var(--theme);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-list li{
+    color: white;
+    list-style: none;
+    margin-left: 15px;
+    padding: 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+li:hover{
+    background-color: #62082b;
+}
+h2{
+    color: white;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.sidebar-list{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

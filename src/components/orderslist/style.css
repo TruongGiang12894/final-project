@@ -1,0 +1,30 @@
+.orders-list-header, .title-order-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid var(--bg-color);
+    border-top: 0px;
+    padding: 7px 0px;
+    background-color: white;
+}
+.title-order-list{
+    padding: 15px 0px;
+}
+.orders-list-table{
+    width: 70%;
+    margin: 0px 10px;
+}
+.orders-list-header>h4, .title-order-list>h6,.title-order-list>h4{
+    margin: 0px 20px;
+}
+.title-order-list{
+    border-radius: 20px 20px 0px 0px;
+    border-top: 2px solid var(--bg-color);
+}
+.title-order-list>h6{
+    background-color: var(--theme);
+    padding: 5px;
+    border-radius: 12px;
+    color: white;
+}

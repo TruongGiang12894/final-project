@@ -1,0 +1,17 @@
+.dashboard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.charts-tags{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.orders-feedbacks-table{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
