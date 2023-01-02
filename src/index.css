@@ -14,11 +14,37 @@ code {
 *{
   padding: 0;
   margin: 0;
+  border: 0;
   box-sizing: border-box;
 }
+input, textarea{
+  border-style: none;
+    outline:none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--font-color);
+}
+input:focus, textarea:focus{
+  border: 1px solid var(--theme);
+}
+button{
+  cursor: pointer;
+}
+
 :root{
   --border-color:rgba(124, 98, 98, 0.3);
   --theme:#8B0C3C;
   --font-color: rgb(124, 98, 98);
-  --bg-color:rgba(109, 73, 73, 0.06);
+  --font-color-light:rgba(124, 98, 98, 0.5);
+  --bg-color: #EEEEEE;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--theme);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: none; 
 }

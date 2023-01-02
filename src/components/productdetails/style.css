@@ -1,0 +1,44 @@
+.productdetails{
+    width: 100%;
+    height: 88%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* --------------------------------------------img gallery */
+.productdetails th, .productdetails td{
+    font-size: 14px;
+    text-align: left;
+    vertical-align: top;
+    padding: 6px 10px;
+}
+.detail1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 20px;
+}
+.detail2{
+    width: 60%;
+    margin: 20px 20px 20px 0px;
+}
+.detail2>table{
+    margin: 0px auto;
+    width: 100%;
+}
+ /* ------------------------------------------table */
+.detail2 thead>tr{
+    background-color: var(--bg-color);
+}
+.detail2 table tr{
+    border: 1px solid var(--border-color) ;
+}
+.detail2 tr>th:nth-child(1), .detail2 tr>td:nth-child(1){
+    width: 170px;
+}
+
+.detail2 table{
+    border-collapse: collapse;
+}

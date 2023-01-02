@@ -1,0 +1,18 @@
+.input-wrapper>input, .input-wrapper>textarea{
+    padding: 5px 7px;
+    margin-top: 5px;
+    width: 90%;
+}
+.input-wrapper>.validate{
+    font-size:x-small;
+    color: red;
+}
+.input-wrapper>textarea{
+    resize: none;
+}
+.input-wrapper{
+    margin-top: 12px;
+}
+::placeholder{
+    color: var(--font-color-light);
+}

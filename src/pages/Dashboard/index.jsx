@@ -10,15 +10,17 @@ import './style.css';
 function Dashboard() {
     return (
         <div className='dashboard'>
-            <Header title={title.dashboard}/>
+            <Header title={title.dashboard} />
+            <div className='content'>
                 <div className='charts-tags'>
                     <DisplayChart />
                     <Tags />
                 </div>
                 <div className='orders-feedbacks-table'>
-                <OrdersList />
-                <FeedbackList/>
+                    <OrdersList />
+                    <FeedbackList />
                 </div>
+            </div>
         </div>
     );
 }

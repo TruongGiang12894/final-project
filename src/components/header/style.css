@@ -1,12 +1,18 @@
 .header{
     display: flex;
     flex-direction: row;
-    height: 80px;
     width: 90%;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 0px;
     border-bottom: 2px solid var(--border-color);
-    overflow-x: hidden;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+}
+.header-stich{
+    width: 90%;
+
 }
 .user>img{
     width: 45px;
@@ -16,19 +22,19 @@
     margin-right: 15px;
 }
 .header > .user{
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    place-content: flex-end;
 }
 .header>h3{
     width: 150px;
 }
-.search{
-    border-style: none;
-    outline:none;
-    border: 1px solid var(--font-color);
-    width: 40%;
-    height: 40%;
-    padding: 0px 15px;
-    border-radius: 20px;
+
+.header>div{
+    width: 30%;
+    height: 60%;
 }
+
+

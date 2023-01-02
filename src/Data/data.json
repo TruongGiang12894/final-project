@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": 8,
+      "ten": "ASUS TUF F15 FX507ZE HN093W",
+      "img": [],
+      "mota": "laptop gaming",
+      "CPU": "CeleronN40201.1GHz",
+      "RAM": "4 GBDDR4 (1 khe)Từ 2400 MHz (Hãng công bố)",
+      "Ocung": "128 GB SSD M2 PCIe",
+      "manhinh": "11.6\"HD (1366 x 768)",
+      "cardmanhinh": "Card tích hợpIntel UHD 600",
+      "congketnoi": "USB Type-CHDMILAN (RJ45)Jack tai nghe 3.5 mm2 x USB 3.2",
+      "hedieuhanh": "Windows 11 Home SL",
+      "thietke": "Vỏ nhựa",
+      "kichthuockhoiluong": "Dài 295 mm - Rộng 215 mm - Dày 20.99 mm - Nặng 1.4 kg",
+      "ngayramat": "2021",
+      "gia": "20000000",
+      "khuyenmai": "18000",
+      "soluong": "1000",
+      "ngaynhap": "22/12/2022"
+    },
+    {
+      "id": 2,
+      "ten": "ASUS TUF F15 FX507ZE HN093W",
+      "img": [],
+      "mota": "laptop gaming",
+      "CPU": "CeleronN40201.1GHz",
+      "RAM": "4 GBDDR4 (1 khe)Từ 2400 MHz (Hãng công bố)",
+      "Ocung": "128 GB SSD M2 PCIe",
+      "manhinh": "11.6\"HD (1366 x 768)",
+      "cardmanhinh": "Card tích hợpIntel UHD 600",
+      "congketnoi": "USB Type-CHDMILAN (RJ45)Jack tai nghe 3.5 mm2 x USB 3.2",
+      "hedieuhanh": "Windows 11 Home SL",
+      "thietke": "Vỏ nhựa",
+      "kichthuockhoiluong": "Dài 295 mm - Rộng 215 mm - Dày 20.99 mm - Nặng 1.4 kg",
+      "ngayramat": "2021",
+      "gia": "20000000",
+      "khuyenmai": "18000",
+      "soluong": "1000",
+      "ngaynhap": "22/12/2022"
+    },
+    {
+      "ten": "Dell",
+      "mota": "laptop office",
+      "CPU": "intel",
+      "RAM": "8Gb",
+      "Ocung": "1Tr",
+      "manhinh": "10 inch",
+      "cardmanhinh": "GTX",
+      "congketnoi": "HDMI",
+      "hedieuhanh": "Windown",
+      "thietke": "alumium shell",
+      "kichthuockhoiluong": "5kg",
+      "ngayramat": "2022-12-22",
+      "gia": "15000000",
+      "khuyenmai": "15",
+      "soluong": "200",
+      "ngaynhap": "2022-12-12",
+      "id": 3
+    },
+    {
+      "ten": "Dell",
+      "mota": "laptop office",
+      "CPU": "intel",
+      "RAM": "8Gb",
+      "Ocung": "1Tr",
+      "manhinh": "10 inch",
+      "cardmanhinh": "GTX",
+      "congketnoi": "HDMI",
+      "hedieuhanh": "Windown",
+      "thietke": "alumium shell",
+      "kichthuockhoiluong": "5kg",
+      "ngayramat": "2022-12-22",
+      "gia": "15000000",
+      "khuyenmai": "15",
+      "soluong": "200",
+      "ngaynhap": "2022-12-12",
+      "id": 4
+    }
+  ],
+  "oders": [
+    {
+      "id": 1,
+      "ten": "",
+      "gia": "",
+      "soluong": "",
+      "tongbill": "",
+      "thoigianmua": ""
+    }
+  ]
+}

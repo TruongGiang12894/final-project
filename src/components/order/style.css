@@ -3,10 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    border: 2px solid var(--bg-color);
-    border-top: 0px;
+    border-bottom: 2px solid var(--bg-color);
     padding: 7px 0px;
-    background: white;
 }
 
 .order>div{

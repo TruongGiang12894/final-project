@@ -17,7 +17,8 @@ function DisplayChart(props) {
                 tickPlacement: 'on'
             },
             legend: {
-                position: 'top'
+                position: 'top',
+                offsetY: 20,
             }
         },
         series: [

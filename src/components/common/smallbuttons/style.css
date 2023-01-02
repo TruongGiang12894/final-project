@@ -1,0 +1,21 @@
+.buttons>h6{
+    background-color: var(--theme);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    /* margin:0px 20px; */
+    width: fit-content;
+}
+.buttons>h5{
+    background-color: var(--theme);
+    padding: 7px 12px;
+    border-radius: 7px;
+    color: white;
+    /* margin: 0px 20px; */
+    width: fit-content;
+}
+.buttons{
+    display: inline;
+    align-self: center;
+    cursor: pointer;
+}

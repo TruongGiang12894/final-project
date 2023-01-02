@@ -8,3 +8,9 @@
     border: 1px solid lime;
     background-color: rgba(144, 238, 144, 0.05);
 } */
+.content{
+    width: 90%;
+    height: 90%;
+    margin: 0px auto 20px auto;
+    background-color: var(--bg-color);
+}

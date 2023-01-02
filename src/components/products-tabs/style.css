@@ -1,0 +1,19 @@
+.tabs{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    top: 71px;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+.tab{
+    padding: 12px 15px;
+    color: var(--font-color);
+}
+.tabs>.active{
+    box-shadow: 0px -2px var(--theme);
+    background-color: white;
+    font-weight: bold;
+}
