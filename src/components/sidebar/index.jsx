@@ -11,12 +11,12 @@ function Sidebar(props) {
       <div className='sidebar'>
          <h2>LAP-STORE</h2>
          <IconContext.Provider value={{ size: '20', className: 'icon' }}>
-            <ul className='sidebar-list'>
-               <NavLink to={'admin/dashboard'}><li><AiOutlineAreaChart />Dash board</li></NavLink>
-               <NavLink to={'admin/products'}><li><AiOutlineAppstore />Products</li></NavLink>
-               <NavLink to={'admin/customers'}><li><AiOutlineTeam />Customers</li></NavLink>
-               <NavLink><li><AiTwotoneApi />Log out</li></NavLink>
-            </ul>
+            <div className='sidebar-list'>
+               <NavLink to={'admin/dashboard'}><div className='sidebar-tab'><AiOutlineAreaChart />Dash board</div></NavLink>
+               <NavLink to={'admin/products'}><div className='sidebar-tab'><AiOutlineAppstore />Products</div></NavLink>
+               <NavLink to={'admin/customers'}><div className='sidebar-tab'><AiOutlineTeam />Customers</div></NavLink>
+               <NavLink to={'admin/logout'}><div className='sidebar-tab'><AiTwotoneApi />Log out</div></NavLink>
+            </div>
          </IconContext.Provider>
          </div>
          <div className='sidebar-stich'></div>

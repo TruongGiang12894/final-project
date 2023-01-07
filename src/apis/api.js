@@ -1,16 +1,17 @@
+const ULR = 'http://localhost:8000';
 const productApis = {
     getList: () => {
-        const getdata = fetch('http://localhost:8000/products')
+        const getdata = fetch(`${ULR}/products`)
         return getdata
     },   
     
     getProductDetails: (id) => {
-        const getDetails = fetch(`http://localhost:8000/products/${id}`)
+        const getDetails = fetch(`${ULR}/products/${id}`)
         return getDetails
     },
 
     postProduct: (inputPost) => {
-        const postdata = fetch('http://localhost:8000/products', {
+        const postdata = fetch(`${ULR}/products`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(inputPost)
@@ -22,7 +23,7 @@ const productApis = {
     },
 
     updateProduct: (inputUpdate, id) => {
-        const putdata = fetch(`http://localhost:8000/products/${id}`, {
+        const putdata = fetch(`${ULR}/products/${id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(inputUpdate)
@@ -34,7 +35,7 @@ const productApis = {
     },
 
     deleteProduct: (id) => {
-        const deletedata = fetch(`http://localhost:8000/products/${id}`, {
+        const deletedata = fetch(`${ULR}/products/${id}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
         })

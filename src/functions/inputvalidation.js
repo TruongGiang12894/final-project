@@ -1,3 +1,5 @@
+
+
 function checkEmpty(input) {
     if (input)
         return true
@@ -5,7 +7,7 @@ function checkEmpty(input) {
 }
 
 function checkLengthInput(input, minleng, maxleng) {
-    let defineInput = `${input}`;
+    let defineInput = String(input)
     if ((defineInput.length) < minleng ||
         (defineInput.length) > maxleng)
         return false
@@ -13,4 +15,16 @@ function checkLengthInput(input, minleng, maxleng) {
 }
 
 
-export { checkEmpty, checkLengthInput }; 
+function formatNb(nb) {
+    const newNb = new Intl.NumberFormat();
+    const newFormatNb = newNb.format(nb);
+    return newFormatNb
+}
+
+function discount(price, saleoff) {
+    const newPrice = Number(price) - (Number(price) * Number(saleoff) / 100);
+    const discountPrice = formatNb(newPrice);
+    return discountPrice 
+}
+
+export { checkEmpty, checkLengthInput, discount, formatNb }; 

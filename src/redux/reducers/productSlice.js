@@ -1,5 +1,5 @@
 import {createAsyncThunk ,createSlice } from "@reduxjs/toolkit";
-import {getList, postProduct, getProductDetails} from '../../apis/api';
+import {getList, postProduct, getProductDetails, deleteProduct} from '../../apis/api';
 
 // -----------------------------create Async Thunk action
 export const getProductList = createAsyncThunk(
@@ -38,35 +38,73 @@ export const createProduct = createAsyncThunk(
     }
 )
 
+export const delProduct = createAsyncThunk(
+    'fetchproducts/delete',
+    async (id) => {
+        const data = await deleteProduct(id);
+        if (data.ok) {
+            alert('deleted !')
+        } else {
+            alert('Can not connect to server !!')
+        }
+    }
+)
+
 // ------------------------------Create slice with extra reducers interact with async action
+const initState = {
+    ten: '',
+    mota: '',
+    CPU: '',
+    RAM: '',
+    Ocung: '',
+    manhinh: '',
+    cardmanhinh: '',
+    congketnoi: '',
+    hedieuhanh: '',
+    thietke: '',
+    kichthuockhoiluong: '',
+    ngayramat:'',
+    gia:'',
+    khuyenmai:'',
+    soluong:'',
+    ngaynhap:''
+}
+const validState = {
+    ten: true,
+    mota: true,
+    CPU: true,
+    RAM: true,
+    Ocung: true,
+    manhinh: true,
+    cardmanhinh: true,
+    congketnoi: true,
+    hedieuhanh: true,
+    thietke: true,
+    kichthuockhoiluong: true,
+    ngayramat:true,
+    gia:true,
+    khuyenmai:true,
+    soluong:true,
+    ngaynhap:true
+}
+
 export const ProductListSlice = createSlice({
     name: 'products',
     initialState: {
-        product: {
-            ten: '',
-            mota: '',
-            CPU: '',
-            RAM: '',
-            Ocung: '',
-            manhinh: '',
-            cardmanhinh: '',
-            congketnoi: '',
-            hedieuhanh: '',
-            thietke: '',
-            kichthuockhoiluong: '',
-            ngayramat:'',
-            gia:'',
-            khuyenmai:'',
-            soluong:'',
-            ngaynhap:''
-        },
-        path:false,
+        product: { ...initState },
+        productdetail: { ...initState },
+        validinput: {...validState},
         products: [],
-        failed:''
     },
     reducers: {
         addInfo (state, action){
             state.product = action.payload;
+        },
+        clearInfo(state) {
+            state.product = initState;
+        },
+        validate(state, action) {
+            state.validinput = action.payload
         }
     },
     extraReducers: (builder) => {
@@ -75,13 +113,13 @@ export const ProductListSlice = createSlice({
             state.products = action.payload;
             })
             .addCase(getDetails.fulfilled, (state, action) => {
-                state.product = action.payload;
-                const path = document.location.pathname;
-                const splicePath = path.split('/');
-                console.log(splicePath.includes('4'));
+                state.productdetail = action.payload;
             })
+            // .addCase(delProduct.fulfilled, (state, action) => {
+            //     console.log(state.products);
+            // })
     }
 }); 
 
-export const { addInfo, addProduct } = ProductListSlice.actions;
+export const { addInfo, addProduct, clearInfo, setactive, validate } = ProductListSlice.actions;
 export default ProductListSlice;

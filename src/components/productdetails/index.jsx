@@ -9,7 +9,7 @@ import "./style.css";
 
 function Productdetails() {
     const dispatch = useDispatch();
-    const productDetails = useSelector((state) => state.productlist.product)
+    const productDetails = useSelector((state) => state.productlist.productdetail)
     const { productId } = useParams();
 
     const {ten,
@@ -35,6 +35,7 @@ function Productdetails() {
 
     return (
         <div className="productdetails">
+            <div className="tab-detail">Details</div>
             <div className="detail1">
                 <Slideimg />
                 <Buttons buttonName='Edit product' buttonSize='medium' marGin='10px auto'/>
